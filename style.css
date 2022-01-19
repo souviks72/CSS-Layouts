@@ -27,7 +27,7 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* height: 80px; */
 }
 
@@ -37,8 +37,8 @@ nav {
 }
 
 article {
-  margin-bottom: 60px;
-  width: 800px;
+  /* margin-bottom: 60px; */
+  /* width: 800px; */
   /* float: left; */
   padding: 0 30px;
 }
@@ -49,8 +49,8 @@ aside {
   border-bottom: 5px solid #1098ad;
   /* padding-top: 50px;
   padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 350px;
+  /* padding: 50px 0; */
+  /* width: 350px; */
   /* float: right; */
 }
 
@@ -321,17 +321,17 @@ nav {
   gap: 25px;
 }
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
-.main {
+/* .row {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
+} */
 
 .author-h {
   display: flex;
@@ -344,10 +344,17 @@ nav {
   margin-top: 10px;
 }
 
-aside {
+/* aside {
   display: flex;
   flex-direction: column;
-}
+  flex: 0 0 300px;
+} */
+
+/*
+article {
+  This allows lexbox to do calculations on its own
+  flex: 1;
+}*/
 
 .related-post {
   display: flex;
@@ -374,4 +381,28 @@ aside {
   font-size: 14px;
   font-weight: normal;
   font-style: italic;
+}
+
+/* GRID LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  align-items: start;
+  row-gap: 60px;
+}
+
+.main-header {
+  grid-column: 1/-1;
+}
+
+article {
+}
+
+aside {
+  width: 300px;
+}
+
+footer {
+  grid-column: 1/-1;
 }
