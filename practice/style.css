@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  position: relative;
+  border-top: 10px solid #1098ad;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+}
+
+.main-header {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(240, 232, 232);
+  padding: 20px;
+}
+
+aside {
+  width: 300px;
+  background-color: rgb(240, 232, 232);
+  border-top: 10px solid #1098ad;
+  border-bottom: 10px solid #1098ad;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+article {
+  padding: 20px;
+}
+
+.related {
+  list-style: none;
+}
+
+.related-post {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.related-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.related-link {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.related-author {
+  font-size: 14px;
+  font-style: italic;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: rgb(0, 119, 255);
+  font-weight: bold;
+  text-decoration: underline rgb(17, 0, 255);
+}
+
+a:active {
+  background-color: rgba(127, 176, 223, 0.11);
+  font-style: italic;
+}
+
+footer {
+  grid-column: 1/-1;
+}
+
+.main-header h1::first-letter {
+  font-style: normal;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.author-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.author {
+  margin: 15px;
+}
+
+.container {
+  position: relative;
+}
+
+button {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  padding: 20px;
+  font-size: 22px;
+}
